@@ -1,4 +1,4 @@
-ab/**------------------------------------------------------------------------
+/**------------------------------------------------------------------------
                                     ABOUT
         Hoja de estilo de tortilla.html
         Autor: Sergio Ramos Alarón
@@ -7,6 +7,23 @@ ab/**------------------------------------------------------------------------
         Comentario: Trabajo de lenguajes de m
  *------------------------------------------------------------------------**/
 
-body {
-    background-color: red;
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+ body {
+    background-color: yellow    ;
+    margin: 0;padding: 0; /* para que el wrapper se pegue a body */
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+    background-color: white;
 }
