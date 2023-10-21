@@ -27,3 +27,7 @@ p,ul,ol,dl{
     color: #DDCFBD;
     font-size: 15px;
 }
+
+#wrapper {width:80%; 
+    margin:auto;
+    background-color: #fff;}
