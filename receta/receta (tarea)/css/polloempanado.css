@@ -1,0 +1,29 @@
+/**------------------------------------------------------------------------
+                                    ABOUT
+        Hoja de estilo de polloempanado.html
+        Autor: Sergio Ramos Alarón
+        Versión: 1.0
+        Fecha: Octubre de 2023
+        Comentario: Trabajo de lenguajes de marcas
+ *------------------------------------------------------------------------**/
+
+/* colores de la página web */
+/*h1-> D1701D
+    h2-> A03E11
+    p-> 978568
+    ul,ol-> DDCFBD
+    blockquote-> 3A1E12 */
+
+h1{
+    color: #D1701D;
+    text-align: center;
+}
+
+h2{
+    color: #A03E11;
+}
+
+p,ul,ol,dl{
+    color: #DDCFBD;
+    font-size: 15px;
+}

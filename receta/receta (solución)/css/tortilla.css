@@ -1,0 +1,19 @@
+/*****************************************************/
+/*         hoja de estilo de tortilla.html           */
+/*         autora: Pilar González Augusto            */
+/*         version: 1.0                              */
+/*         fecha: octubre de 2023                    */
+/*         comentario: trabajo de lenguajes de m     */
+/*****************************************************/
+
+@font-face{ src:url()   ;
+    font-family: Arial, Helvetica, sans-serif  ;
+}
+
+body {background-color: #f7f298;
+margin:0;padding:0;          /* para que el wrapper se pegue a body */
+}
+
+#wrapper {width:80%; 
+margin:auto;
+background-color: #fff;}
