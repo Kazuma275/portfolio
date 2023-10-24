@@ -10,24 +10,79 @@
 /* colores de la página web */
 /*h1-> D1701D
     h2-> A03E11
-    p-> 978568
-    ul,ol-> DDCFBD
+    ul,ol,p,dl-> DDCFBD
     blockquote-> 3A1E12 */
 
+/*  buscar un par de fuentes que combinen, para títulos y para contenido */
+@font-face {
+    font-family: texto;
+    src: url();
+    @font-face {
+        font-family: titulos;
+        src: url();
+    }
+}
+
+/* poner SIEMPRE que utilicemos un layout complejo */
+/* las medidas de ancho y alto se deben calcular del borde hacia adentro */
+
+* {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+p{
+    background-color: #DDCFBD;
+    color: #D1701D;
+}
 h1{
     color: #D1701D;
     text-align: center;
+}
+
+h1,h2{
+    text-align: justify;
+}
+
+dt{
+    font-weight: bold; /* para que salga en negrita */
+    font-variant: small-caps; /* para que se resalte la mayúscula    */
+    text-decoration: underline; /* subrayar el texto */
 }
 
 h2{
     color: #A03E11;
 }
 
-p,ul,ol,dl{
+ul,ol,dl{
     color: #DDCFBD;
     font-size: 15px;
 }
 
-#wrapper {width:80%; 
-    margin:auto;
-    background-color: #fff;}
+img{
+    float: right; /* forma de colocar la imagen pegada a la derecha */
+}
+
+ul{
+    list-style-image: url(../img/bullet_ball_yellow.png);
+}
+blockquote{
+    font-style: italic;
+    border-left: 4px solid #A03E11;
+    padding: 10px;
+    background-color: #DDCFBD;
+}
+
+body{
+    font-size: 1.2em;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/mantel.jpg);
+}
+#wrapper {
+    width:80%; /* para width, la medida suele ser el % */
+    margin: auto;
+    padding: 5%;
+    background-color: #fff;
+}
