@@ -14,14 +14,17 @@
     blockquote-> 3A1E12 */
 
 /*  buscar un par de fuentes que combinen, para títulos y para contenido */
+
 @font-face {
     font-family: texto;
-    src: url();
-    @font-face {
-        font-family: titulos;
-        src: url();
-    }
+    src: url(../font/BrigadierSans/OpenType-PS/BrigadierSansRegular.otf);
 }
+
+@font-face {
+    font-family: titulos;
+    src: url(../font/FjallaOne-Regular.ttf);
+    }
+
 
 /* poner SIEMPRE que utilicemos un layout complejo */
 /* las medidas de ancho y alto se deben calcular del borde hacia adentro */
@@ -71,6 +74,7 @@ blockquote{
     border-left: 4px solid #A03E11;
     padding: 10px;
     background-color: #DDCFBD;
+    font-weight: bold;
 }
 
 body{

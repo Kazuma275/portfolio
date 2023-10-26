@@ -1,0 +1,9 @@
+/* Webfont: BrigadierSans-Regular */@font-face {
+    font-family: 'BrigadierSans';
+    src: url('BrigadierSansRegular.woff2') format('woff2'), /* Modern Browsers */
+         url('BrigadierSansRegular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
