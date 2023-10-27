@@ -9,9 +9,9 @@
 
 /* colores de la página web */
 /*h1-> D1701D
-    h2-> A03E11
-    ul,ol,p,dl-> DDCFBD
-    blockquote-> 3A1E12 */
+h2-> A03E11
+ul,ol,p,dl-> DDCFBD
+b   lockquote-> 3A1E12 */
 
 /*  buscar un par de fuentes que combinen, para títulos y para contenido */
 
@@ -36,8 +36,9 @@
 
 p{
     background-color: #DDCFBD;
-    color: #D1701D;
+    color: #D1701D; 
 }
+
 h1{
     color: #D1701D;
     text-align: center;
@@ -54,16 +55,17 @@ dt{
 }
 
 h2{
-    color: #A03E11;
+    color: #D1701D;
 }
 
 ul,ol,dl{
-    color: #DDCFBD;
+    color: rgb(180, 120, 30);
     font-size: 15px;
 }
 
 img{
     float: right; /* forma de colocar la imagen pegada a la derecha */
+    border-radius: 20%;
 }
 
 ul{
