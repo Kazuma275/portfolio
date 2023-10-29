@@ -17,7 +17,7 @@ b   lockquote-> 3A1E12 */
 
 @font-face {
     font-family: texto;
-    src: url(../font/BrigadierSans/OpenType-PS/BrigadierSansRegular.otf);
+    src: url(../font/Libertarian.ttf);
 }
 
 @font-face {
@@ -91,4 +91,12 @@ body{
     margin: auto;
     padding: 5%;
     background-color: #fff;
+}
+
+h1,h2{
+    font-family: 'titulos';
+}
+
+p,ol,ul,dl,dt,blockquote{
+    font-family: 'texto';
 }
