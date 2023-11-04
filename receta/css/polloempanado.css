@@ -37,11 +37,13 @@ b   lockquote-> 3A1E12 */
 p{
     background-color: #DDCFBD;
     color: #D1701D; 
+    font-family: 'texto';
 }
 
 h1{
     color: #D1701D;
     text-align: center;
+    font-family: 'titulos';
 }
 
 h1,h2{
@@ -52,15 +54,20 @@ dt{
     font-weight: bold; /* para que salga en negrita */
     font-variant: small-caps; /* para que se resalte la mayúscula    */
     text-decoration: underline; /* subrayar el texto */
+    font-family: 'texto';
+    font-weight: bold;
 }
 
 h2{
     color: #D1701D;
+    font-family: 'titulos';
 }
 
 ul,ol,dl{
     color: rgb(180, 120, 30);
     font-size: large;
+    font-family: 'texto';
+    font-weight: bold;
 }
 
 #img1{
@@ -71,6 +78,7 @@ ul,ol,dl{
                 /* poner siempre un porcentaje del ancho del bloque contenedor */
     display: block;
     height: auto;
+    margin-top: -40px;
 }
 
 #img2{
@@ -81,17 +89,21 @@ ul,ol,dl{
                 /* poner siempre un porcentaje del ancho del bloque contenedor */
     display: block;
     height: auto;
+    width: 70%;
 }
 
 ul{
     list-style-image: url(../img/bullet_ball_yellow.png);
+    font-family: 'texto';
 }
+
 blockquote{
     font-style: italic;
     border-left: 4px solid #A03E11;
     padding: 10px;
     background-color: #DDCFBD;
     font-weight: bold;
+    font-family: 'texto';
 }
 
 body{
@@ -100,7 +112,9 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(../img/mantel.jpg);
+    font-family: 'texto';
 }
+
 #wrapper {
     width:80%; /* para width, la medida suele ser el % */
     margin: auto;
@@ -111,14 +125,6 @@ body{
     background-color: #fff;
 }
 
-h1,h2{
-    font-family: 'titulos';
-}
-
-p,ol,ul,dl,dt,blockquote{
-    font-family: 'texto';
-}
-
 #hero {
     background-image: url(../img/layered-peaks-haikei.png);
     height: 95vh; /* el 100% del alto de la ventana del navegador            */
@@ -126,10 +132,6 @@ p,ol,ul,dl,dt,blockquote{
     background-position: center;
     position: relative; /* contenedor relativo */
 
-}
-
-ul{
-    list-style-image: url(../img/bullet_ball_yellow.png);
 }
 
 /* * * * * * * * * * * * * * * RESPONSIVIDAD * * * * * * * * * * *  * * */
@@ -143,6 +145,9 @@ ul{
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* Estilos para tabletas */
+    #img1{
+        width: 50%;
+    }
 }  
 
 @media only screen and (width>767px) {
@@ -154,6 +159,29 @@ ul{
         
     }
 
+}
+
+@media only screen and (width<767) {
+    img{
+        width: 120%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    #img2{
+        float: none;
+        display: block;
+        width: 100%;
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+    #img1{
+        float: none;
+        display: block;
+        width: 100%;
+        margin-top: 5%;
+        padding-right: 0%;
+    }
 }
 
 @media only screen and (width<1000px) {
