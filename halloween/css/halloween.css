@@ -1,0 +1,60 @@
+/*******************************************************************/
+
+
+
+
+/*******************************************************************/
+
+/*  external fonts */
+
+
+
+/**************************** scenario *****************************/
+
+body{
+    background-color: black;
+}
+
+#scenario {
+    width: 2040px;
+    height: 1040px;
+    background-image: url(../img/background.jpg);
+    margin: auto;
+    position: relative;
+}
+
+#lantern{
+    width: 110px;
+    height: 140px;
+    /* border: 2px solid orange; */
+    position: absolute;
+    top: 90px;
+    left: 695px;
+}
+
+#candy{
+    width: 210px;
+    height: 240px;
+    border: 2px solid red;
+    position: absolute;
+    top: 500px;
+    left: 1055px;
+}
+
+
+#knife{
+    width: 220px;
+    height: 240px;
+    border: 2px solid green;
+    position: absolute;
+    top: 505px;
+    left: 1450px;
+}
+
+#rayo{
+    position: absolute;
+    top: 100px;
+    left: 695px;
+    width: 120px;
+    visibility:hidden; /* así es como escondo a rayo */
+}

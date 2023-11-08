@@ -1,0 +1,7 @@
+no va a ser responsive <- excepción
+utilizaremos {
+	imagenes
+	posicionamiento
+	sonido
+	JAVASCRIPT
+}
