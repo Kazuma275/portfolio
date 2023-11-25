@@ -1,49 +1,52 @@
-/**------------------------------------------------------------------------
+/*--------------------------------------------------------------------------*
                                     ABOUT
         Hoja de estilo de halloween.html
-        Autor: Sergio Ramos Alarón
-        Versión: 1.0
+        Autor: Sergio Ramos Alarcón
+        Versión: 2.0
         Fecha: Noviembre de 2023
         Comentario: Trabajo de lenguajes de marcas
- *------------------------------------------------------------------------**/
+----------------------------------------------------------------------------*/
 
-/*  external fonts */
+/*  External fonts */
+
+/* #text1 */
 
 @font-face {
     font-family: secret;
     src: url(../font/SecretHalloween.ttf);
 }
 
+/* #text2 */
+
 @font-face {
     font-family: hellohalloween;
     src: url(../font/FontsFree-Net-Hello-Halloween.ttf);
 }
+
+/* #text3 */
 
 @font-face {
     font-family: halloweenparty;
     src: url(../font/FontsFree-Net-HalloweenPartyRegular.ttf);
 }
 
-
-
-/**************************** scenario *****************************/
+/* Background for my page */
 
 body{
     background-color: black;
     background-image: url(../img/background.jpg);
 }
 
+/* A few edits for my image */
+
 .background-img {
-    /* Ajustar el tamaño de la imagen para cubrir toda la ventana */
     object-fit: cover;
-    /* Establecer la altura de la imagen al 100% de la ventana */
     height: 100vh; 
-    /* Establecer la anchura de la imagen al 100% de la ventana */
     width: 100vw; 
-    /* Hacer que la imagen sea opaca para que el contenido sea visible encima de ella */ 
     z-index: -1; 
 }
 
+/* Signs */
 
 #text1 {
     color: white;
@@ -51,6 +54,14 @@ body{
     font-size: 60px;
     padding-left: 860px;
     padding-top: 20px;
+}
+
+/* Animation for #text1 */
+
+#text1:hover {
+    color: red;
+    animation: text1;
+    animation-duration: 5s;
 }
 
 #text2 {
@@ -61,13 +72,28 @@ body{
     padding-top: 200px;
 }
 
+/* Not used */
+
+/* #text2:hover {
+    color: blue;
+    } */
+
 #text3 {
     font-family: halloweenparty;
     color: red;
     font-size: 60px;
     padding-top: 150px;
-    padding-left: 1300px;
+    padding-left: 1200px;
 }
+
+/* Not used */
+
+/* #text3:hover {
+    color: orange;
+} */
+
+
+/* Not used */
 
 /* 
 #scenario {
@@ -78,10 +104,12 @@ body{
     position: relative;
 */
 
+/* Scream containers */
+
 #desktop{
     width: 150px;
     height: 140px;
-    border: 2px solid orange;
+/*     border: 2px solid orange; */
     position: absolute;
     left: 555px;
     top: 465px;
@@ -90,7 +118,7 @@ body{
 #eye{
     width: 50px;
     height: 50px;
-    border: 2px solid red;
+/*     border: 2px solid red; */
     position: absolute;
     left: 1070px;
     top: 390px;
@@ -99,11 +127,15 @@ body{
 #camera{
     width: 20px;
     height: 20px;
-    border: 2px solid green;
+/*     border: 2px solid green; */
     position: absolute;
     top: 775px;
     left: 1455px;
 }
+
+/* Screamers */
+
+/* Jeff */
 
 #jeff{
     position: absolute;
@@ -114,6 +146,8 @@ body{
     visibility: hidden;
 }
 
+/* Fnaf */
+
 #fnaf{
     position: absolute;
     top: 0px;
@@ -123,21 +157,21 @@ body{
     height: 1080px;
 }
 
+/* Rayo */
+
 #rayo{
     position: absolute;
     top: 100px;
     left: 695px;
     width: 120px;
-    visibility:hidden; /* así es como escondo a rayo */
-    animation-name: example;
+    visibility:hidden;
+    animation-name: animation-rayo;
     animation-duration: 40s;
 }
 
-#text1:hover {
-    color: red;
-    animation: text1;
-    animation-duration: 5s;
-}
+/* Keyframes */
+
+/* Animation for #text1 */
 
 @keyframes text1 {
     from {
@@ -150,15 +184,9 @@ body{
     }
 }
 
-#text2:hover {
-    color: blue;
-}
+/* Animation for #rayo */
 
-#text3:hover {
-    color: orange;
-}
-
-@keyframes example {
+@keyframes animation-rayo {
     0%   {
         left:200px; top:200px;
     }
@@ -178,5 +206,4 @@ body{
     100% {
         left:1000px; top:100px;
     }
-    
 }

@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halloween</title>
+    <title>Happy Halloween!</title>
     <link rel="stylesheet" href="./css/halloween.css">
     <link rel="favicon" href="./img/favicon.png" type="image/x-icon">
-    <!-- aqui enlazamos el archivo externo con las funciones de js -->
     <script src="./js/halloween.js"></script>
 </head>
 <body>
-    
-    <h1 id="text1"> DON'T TOUCH MY EYE   </h1>
-    <h1 id="text2"> SAFE ZONE  </h1>
+    <h1 id="text1"> DON'T TOUCH MY EYE</h1>
+    <h1 id="text2"> SAFE ZONE</h1>
     <h1 id="text3"> THE GREEN LED IS DANGEROUS</h1>
-    <!-- tis exercise is made just for fun -->
-    <!-- WARNING: it's not RESPONSIVE, only for computers & laptops -->
-    <!-- I have to search for an image, a wallpaper image -->
     <div id="scenario">
-        <!-- we are going to fix an specific area for an event for example the moon -->
+
+        <!-- Rayo -->
         <img id="rayo" src="../halloween/img/rayo.jpg" alt="" >
-        <div id="desktop" onmouseover="show('rayo');sound('john-cena')" onmouseout="hide('rayo');silence('john-cena')">
-            <!-- nothing inside  -->
+        <div id="desktop" onmouseover="show('rayo');sound('ladrido-perro')" onmouseout="hide('rayo');silence('ladrido-perro')">
+
         </div>
-        <audio id="john-cena">
-            <source src="./sound/john-cena.mp3" type="audio/mp3">
+        <audio id="ladrido-perro">
+            <source src="./sound/ladrido-perro.mp3" type="audio/mp3">
         </audio>
         
+        <!-- Fnaf -->
         <img id="fnaf" src="../halloween/img/fnaf.gif" alt="Susto terrorífico">
         <div id="eye" onmouseover="show('fnaf');sound('five-nights')" onmouseout="hide('fnaf');silence('five-nights')">
-            <!-- nothing inside -->
+            
         </div>
         <audio id="five-nights">
             <source src="../halloween/sound/five-nights.mp3" type="audio/mp3">
         </audio>
+
+        <!-- Jeff -->
         <img id="jeff" src="../halloween/img/jeff.gif" alt="">
         <div id="camera" onmouseover="show('jeff');sound('jeff-sound')"onmouseout="hide('jeff');silence('jeff-sound')">
-            <!-- nothing inside -->
+            
         </div>
         <audio id="jeff-sound">
             <source src="../halloween/sound/jeff-sound.mp3">
