@@ -1,11 +1,28 @@
-/*******************************************************************/
-
-
-
-
-/*******************************************************************/
+/**------------------------------------------------------------------------
+                                    ABOUT
+        Hoja de estilo de halloween.html
+        Autor: Sergio Ramos Alarón
+        Versión: 1.0
+        Fecha: Noviembre de 2023
+        Comentario: Trabajo de lenguajes de marcas
+ *------------------------------------------------------------------------**/
 
 /*  external fonts */
+
+@font-face {
+    font-family: secret;
+    src: url(../font/SecretHalloween.ttf);
+}
+
+@font-face {
+    font-family: hellohalloween;
+    src: url(../font/FontsFree-Net-Hello-Halloween.ttf);
+}
+
+@font-face {
+    font-family: halloweenparty;
+    src: url(../font/FontsFree-Net-HalloweenPartyRegular.ttf);
+}
 
 
 
@@ -13,42 +30,97 @@
 
 body{
     background-color: black;
+    background-image: url(../img/background.jpg);
 }
 
+.background-img {
+    /* Ajustar el tamaño de la imagen para cubrir toda la ventana */
+    object-fit: cover;
+    /* Establecer la altura de la imagen al 100% de la ventana */
+    height: 100vh; 
+    /* Establecer la anchura de la imagen al 100% de la ventana */
+    width: 100vw; 
+    /* Hacer que la imagen sea opaca para que el contenido sea visible encima de ella */ 
+    z-index: -1; 
+}
+
+
+#text1 {
+    color: white;
+    font-family: secret ;
+    font-size: 60px;
+    padding-left: 860px;
+    padding-top: 20px;
+}
+
+#text2 {
+    font-family: hellohalloween;
+    color: orange;
+    font-size: 60px;
+    padding-left: 520px;
+    padding-top: 200px;
+}
+
+#text3 {
+    font-family: halloweenparty;
+    color: red;
+    font-size: 60px;
+    padding-top: 150px;
+    padding-left: 1300px;
+}
+
+/* 
 #scenario {
     width: 2040px;
-    height: 1040px;
+    height: 1040px; 
     background-image: url(../img/background.jpg);
     margin: auto;
     position: relative;
-}
+*/
 
-#lantern{
-    width: 110px;
+#desktop{
+    width: 150px;
     height: 140px;
-    /* border: 2px solid orange; */
+    border: 2px solid orange;
     position: absolute;
-    top: 90px;
-    left: 695px;
+    left: 555px;
+    top: 465px;
 }
 
-#candy{
-    width: 210px;
-    height: 240px;
+#eye{
+    width: 50px;
+    height: 50px;
     border: 2px solid red;
     position: absolute;
-    top: 500px;
-    left: 1055px;
+    left: 1070px;
+    top: 390px;
 }
 
-
-#knife{
-    width: 220px;
-    height: 240px;
+#camera{
+    width: 20px;
+    height: 20px;
     border: 2px solid green;
     position: absolute;
-    top: 505px;
-    left: 1450px;
+    top: 775px;
+    left: 1455px;
+}
+
+#jeff{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    visibility: hidden;
+}
+
+#fnaf{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    width: 1920px;
+    height: 1080px;
 }
 
 #rayo{
@@ -57,4 +129,54 @@ body{
     left: 695px;
     width: 120px;
     visibility:hidden; /* así es como escondo a rayo */
+    animation-name: example;
+    animation-duration: 40s;
+}
+
+#text1:hover {
+    color: red;
+    animation: text1;
+    animation-duration: 5s;
+}
+
+@keyframes text1 {
+    from {
+        opacity: 0;
+        left: 0px;
+    }
+    to {
+        opacity: 1;
+        left: 500px;
+    }
+}
+
+#text2:hover {
+    color: blue;
+}
+
+#text3:hover {
+    color: orange;
+}
+
+@keyframes example {
+    0%   {
+        left:200px; top:200px;
+    }
+
+    25%  {
+        left:400px; top:100px;
+    }
+
+    50%  {
+        left:600px; top:400px;
+    }
+
+    75%  {
+        left:800px; top:400px;
+    }
+
+    100% {
+        left:1000px; top:100px;
+    }
+    
 }
